@@ -1,9 +1,6 @@
 # base node image
 FROM node:14.18.1-alpine
 
-# install yarn package manager
-RUN npm install -g yarn
-
 # set the current working directory
 WORKDIR /usr/src/app
 
