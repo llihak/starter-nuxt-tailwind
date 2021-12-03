@@ -10,7 +10,7 @@ steps:
     id: Push
 
   # deploy the container image to cloud run
-  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk:slim'
     entrypoint: gcloud
     timeout: 900s
     args:
