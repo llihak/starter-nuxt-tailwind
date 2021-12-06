@@ -32,11 +32,20 @@ export default {
 
 	buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss', '@nuxtjs/dotenv'],
 
-	modules: ['@nuxtjs/axios'],
+	modules: ['@nuxtjs/axios', '@nuxtjs/apollo'],
 
 	/** axios module configuration */
 	axios: {
 		baseURL: process.env.API_URL || 'http://localhost:1337',
+	},
+
+	/** apollo module configuration */
+	apollo: {
+		clientConfigs: {
+			default: {
+				httpEndpoint: 'http://localhost:1337/graphql',
+			},
+		},
 	},
 
 	build: {},
