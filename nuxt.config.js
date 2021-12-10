@@ -23,14 +23,14 @@ export default {
 		link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
 	},
 
-	css: [],
+	css: ['~/assets/css/main.css'],
 
 	plugins: [],
 
 	/** auto import components when used in templates */
 	components: true,
 
-	buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss', '@nuxtjs/dotenv'],
+	buildModules: ['@nuxt/postcss8', '@nuxtjs/dotenv'],
 
 	modules: ['@nuxtjs/axios', '@nuxtjs/apollo'],
 
@@ -48,5 +48,13 @@ export default {
 		},
 	},
 
-	build: {},
+	build: {
+		/** add tailwind to the postcss configuration */
+		postcss: {
+			plugins: {
+				tailwindcss: {},
+				autoprefixer: {},
+			},
+		},
+	},
 };
