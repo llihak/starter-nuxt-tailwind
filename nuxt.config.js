@@ -30,7 +30,7 @@ export default {
 	/** auto import components when used in templates */
 	components: true,
 
-	buildModules: ['@nuxt/postcss8', '@nuxtjs/dotenv'],
+	buildModules: ['@nuxt/postcss8', '@nuxtjs/dotenv', '@nuxtjs/eslint-module'],
 
 	modules: ['@nuxtjs/axios', '@nuxtjs/apollo'],
 
