@@ -1,5 +1,5 @@
 # base node image
-FROM node:14.18.1-alpine
+FROM node:lts-alpine
 
 # set the current working directory
 WORKDIR /usr/src/app

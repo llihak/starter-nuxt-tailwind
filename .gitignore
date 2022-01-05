@@ -41,3 +41,9 @@ dist
 
 # service worker
 sw.*
+
+# firebase hosting
+.firebase
+.firebaserc
+firebase.json
+firebase_public/

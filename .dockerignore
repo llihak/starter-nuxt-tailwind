@@ -7,3 +7,9 @@ node_modules/
 
 # miscellaneous
 .nuxt
+
+# firebase hosting
+.firebase
+.firebaserc
+firebase.json
+firebase_public/

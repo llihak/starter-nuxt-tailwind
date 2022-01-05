@@ -30,22 +30,13 @@ export default {
 	/** auto import components when used in templates */
 	components: true,
 
-	buildModules: ['@nuxt/postcss8', '@nuxtjs/dotenv', '@nuxtjs/eslint-module'],
+	buildModules: ['@nuxt/postcss8', '@nuxtjs/eslint-module'],
 
-	modules: ['@nuxtjs/axios', '@nuxtjs/apollo'],
+	modules: ['@nuxtjs/axios'],
 
 	/** axios module configuration */
 	axios: {
-		baseURL: process.env.API_URL || 'http://localhost:1337',
-	},
-
-	/** apollo module configuration */
-	apollo: {
-		clientConfigs: {
-			default: {
-				httpEndpoint: 'http://localhost:1337/graphql',
-			},
-		},
+		baseURL: process.env.NODE_ENV === 'production' ? 'https://backstage.s3interdev.com' : 'http://localhost:1337',
 	},
 
 	build: {
