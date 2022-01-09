@@ -1,4 +1,4 @@
-# Starter Template for Nuxt.js with Tailwind CSS and GraphQL
+# Starter Template for Nuxt.js with Tailwind CSS
 
 ## Build Setup
 

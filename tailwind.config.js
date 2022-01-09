@@ -7,6 +7,10 @@ module.exports = {
 		'./nuxt.config.{js,ts}',
 	],
 	theme: {
+		fontFamily: {
+			montserrat: 'Montserrat, sans-serif',
+			roboto: 'Roboto, san-serif',
+		},
 		extend: {},
 	},
 	plugins: [],
