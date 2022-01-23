@@ -27,7 +27,7 @@ export default {
 
 	css: ['~/assets/css/main.css'],
 
-	plugins: [],
+	plugins: ['~/plugins/axios.js'],
 
 	/** auto import components when used in templates */
 	components: true,
