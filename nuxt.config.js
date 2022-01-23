@@ -18,10 +18,14 @@ export default {
 			{ hid: 'description', name: 'description', content: 'Starter template for Nuxt.js projects.' },
 			{ name: 'format-detection', content: 'telephone=no' },
 		],
+
 		link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
+
+		/** fontawesome icon kit */
+		script: [{ src: 'https://kit.fontawesome.com/b70487bd63.js', crossorigin: 'anonymous' }],
 	},
 
-	css: ['@/assets/css/main.css'],
+	css: ['~/assets/css/main.css'],
 
 	plugins: [],
 
