@@ -34,12 +34,23 @@ export default {
 
 	buildModules: ['@nuxt/postcss8'],
 
-	modules: ['@nuxtjs/axios'],
+	modules: ['@nuxtjs/axios', '@nuxtjs/apollo'],
 
 	/** axios module configuration */
 	axios: {
-		baseURL:
-			process.env.NODE_ENV === 'production' ? 'https://backstage.s3interdev.com/api' : 'http://localhost:1337/api',
+		baseURL: process.env.NODE_ENV === 'production' ? 'https://backend.s3interdev.com/api' : 'http://localhost:1337/api',
+	},
+
+	/** apollo module configuration */
+	apollo: {
+		clientConfigs: {
+			default: {
+				httpEndpoint:
+					process.env.NODE_ENV === 'production'
+						? 'https://backend.s3interdev.com/graphql'
+						: 'http://localhost:1337/graphql',
+			},
+		},
 	},
 
 	build: {
