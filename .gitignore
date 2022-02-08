@@ -46,4 +46,4 @@ sw.*
 .firebase
 .firebaserc
 firebase.json
-firebase_public/
+host/
